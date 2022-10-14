@@ -62,18 +62,7 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
-    },
-    "conflict": {
-        "symfony/symfony": "*"
-    },
-    "extra": {
-        "symfony": {
-            "allow-contrib": false,
-            "require": "6.1.*"
-        }
-    },
-    "scripts": {
+        ],
         "cs": "phpcs",
         "cbf": "phpcbf",
         "loc": "phploc ./src",
@@ -91,5 +80,14 @@
         "coveralls": [
             "php-coveralls -vvv"
         ]
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "6.1.*"
+        }
     }
 }
