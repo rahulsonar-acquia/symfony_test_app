@@ -16,6 +16,7 @@
     },
     "require-dev": {
         "acquia/coding-standards": "*",
+        "php-coveralls/php-coveralls": "^2.5",
         "phploc/phploc": "^7.0",
         "phpmd/phpmd": "^2.13",
         "phpunit/phpunit": "^9.5",
