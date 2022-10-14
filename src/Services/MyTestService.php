@@ -12,5 +12,4 @@ class MyTestService
     public function myTestFunction() {
         echo "I am being called from service\n";
     }
-
 }
