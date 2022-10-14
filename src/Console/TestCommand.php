@@ -37,7 +37,7 @@ class TestCommand extends Command {
       echo "Param passed: " . $input->getArgument('param1');
     }
     $output->writeln("My test command");
-    $this->myTestService->myTestFunction();
+    echo $this->myTestService->myTestFunction();
     return Command::SUCCESS;
   }
 

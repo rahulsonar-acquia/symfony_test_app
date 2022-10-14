@@ -27,7 +27,7 @@ class MyTestService {
    */
   public function myTestFunction() {
     $this->logger->info('This is a test message');
-    echo "I am being called from service\n";
+    return "I am being called from service";
   }
 
 }

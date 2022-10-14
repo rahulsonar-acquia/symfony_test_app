@@ -18,6 +18,7 @@
         "acquia/coding-standards": "*",
         "phploc/phploc": "^7.0",
         "phpmd/phpmd": "^2.13",
+        "phpunit/phpunit": "^9.5",
         "squizlabs/php_codesniffer": "*"
     },
     "config": {
@@ -67,6 +68,7 @@
         "cbf": "phpcbf",
         "loc": "phploc ./src",
         "md": "phpmd ./src text phpmd.xml.dist",
+        "unit": "phpunit -vvv",
         "lint": [
             "find src -name '*.php' -print0 | xargs -0 -n1 php -l",
             "find tests -name '*.php' -print0 | xargs -0 -n1 php -l"
@@ -75,7 +77,8 @@
             "@lint",
             "@cs",
             "@loc",
-            "@md"
+            "@md",
+            "@unit"
         ],
         "coveralls": [
             "php-coveralls -vvv"
