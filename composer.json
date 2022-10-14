@@ -76,20 +76,17 @@
     "scripts": {
         "cs": "phpcs",
         "cbf": "phpcbf",
-        "unit": "phpunit tests/phpunit -vvv",
         "loc": "phploc ./src",
-        "md": "phpmd ./src text phpmd.xml.dist --exclude src/Command/UpdateCommand.php,src/Composer/ComposerManager.php",
+        "md": "phpmd ./src text phpmd.xml.dist",
         "lint": [
             "find src -name '*.php' -print0 | xargs -0 -n1 php -l",
             "find tests -name '*.php' -print0 | xargs -0 -n1 php -l"
         ],
         "test": [
-            "@clean",
             "@lint",
             "@cs",
             "@loc",
-            "@md",
-            "@unit"
+            "@md"
         ],
         "coveralls": [
             "php-coveralls -vvv"
